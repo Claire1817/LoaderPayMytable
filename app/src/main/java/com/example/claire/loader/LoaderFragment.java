@@ -14,12 +14,13 @@ import android.widget.TextView;
 import com.github.glomadrian.roadrunner.IndeterminateRoadRunner;
 
 public class LoaderFragment extends Fragment {
+
     private static final String ARG_PARAM2 = "0";
 
-    private String text;
     private int color;
 
     public IndeterminateRoadRunner loader;
+
     public View rootView;
 
     public LoaderFragment() {
@@ -27,6 +28,7 @@ public class LoaderFragment extends Fragment {
     }
 
     public static LoaderFragment newInstance(int color) {
+
         LoaderFragment fragment = new LoaderFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_PARAM2, color);
@@ -60,6 +62,7 @@ public class LoaderFragment extends Fragment {
 
 
     public void setColorLoader(int color) {
+
         this.color = color;
         if (loader != null)
             loader.setColor(color);

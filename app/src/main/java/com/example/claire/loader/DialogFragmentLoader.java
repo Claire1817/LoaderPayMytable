@@ -13,17 +13,17 @@ import android.view.ViewGroup;
  * Created by Claire on 20/10/2016.
  */
 
-public class MyDialogFragment extends DialogFragment {
+public class DialogFragmentLoader extends DialogFragment {
 
-    static MyDialogFragment newInstance() {
-        return new MyDialogFragment();
+    static DialogFragmentLoader newInstance() {
+        return new DialogFragmentLoader();
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.my_dialog_fragment, container, false);
+        View rootView = inflater.inflate(R.layout.dialog_fragment_loader, container, false);
 
         getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
@@ -35,6 +35,7 @@ public class MyDialogFragment extends DialogFragment {
 
     @Override
     public void onStart() {
+
         super.onStart();
         Dialog dialog = getDialog();
         if (dialog != null) {

@@ -14,11 +14,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
        FragmentManager fm = getSupportFragmentManager();
-       DialogFragment newFragment = MyDialogFragment.newInstance();
-        newFragment.show(fm, "kkk");
+       DialogFragment newFragment = DialogFragmentLoader.newInstance();
+        newFragment.show(fm, "loader");
     }
 }
 
