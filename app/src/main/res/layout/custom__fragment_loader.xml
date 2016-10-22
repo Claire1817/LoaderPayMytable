@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:lib="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.claire.loader.LoaderFragment"
+    android:id="@+id/test"
+    android:gravity="center">
+
+    <com.github.glomadrian.roadrunner.IndeterminateRoadRunner
+        android:id="@+id/two_way"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        lib:movement_loop_time="4000"
+        lib:movement_direction="counter_clockwise"
+        lib:path_color="#05FFFFFF"
+        lib:line_size="0.99999"
+        lib:stroke_width="1sp"
+        lib:right_line_animation_time="2800"
+        lib:right_line_max_size="0.5"
+        lib:right_line_animation_start_delay="2500"
+        lib:left_line_animation_start_delay="2000"
+        lib:left_line_max_size="0.5"
+        lib:left_line_animation_time="2000"
+        lib:path_data="@string/pmt"
+        lib:path_original_width="309"
+        lib:path_original_height="309"
+        lib:path_animation_type="twoWay" />
+
+    <com.github.glomadrian.roadrunner.IndeterminateRoadRunner
+        android:id="@+id/material"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        lib:movement_loop_time="4000"
+        lib:movement_direction="counter_clockwise"
+        lib:path_color="#FFFFFF"
+        lib:line_size="0.05"
+        lib:stroke_width="1sp"
+        lib:left_line_animation_time="2800"
+        lib:left_line_max_size="0.5"
+        lib:left_line_animation_start_delay="2500"
+        lib:right_line_animation_start_delay="2000"
+        lib:right_line_max_size="0.5"
+        lib:right_line_animation_time="2000"
+        lib:path_data="@string/pmt"
+        lib:path_original_width="309"
+        lib:path_original_height="309"
+        lib:path_animation_type="twoWay" />
+
+</FrameLayout>
